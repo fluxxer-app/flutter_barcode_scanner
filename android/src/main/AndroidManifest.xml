@@ -2,8 +2,10 @@
     package="com.amolg.flutterbarcodescanner">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="android.hardware.camera" />
     <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    
     <application
         android:largeHeap="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
